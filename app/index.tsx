@@ -6,10 +6,18 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.balanceContainer}>
         <Text style={{
-          fontSize: 20,
-          textAlign: 'center'
+          fontSize: 18,
+          textAlign: 'center',
+          color: '#EEEDEB'
         }}>
-          Available Balance: ₱9000
+          AVAILABLE BALANCE
+        </Text>
+        <Text style={{
+          fontSize: 30,
+          textAlign: 'center',
+          color: '#FEFBF6'
+        }}>
+          ₱900
         </Text>
       </View>
       <View style={{
@@ -91,12 +99,15 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   balanceContainer: {
-    backgroundColor: 'powderblue',
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#5AB2FF',
     padding: 15,
-    width: '80%',
+    width: '95%',
+    height: '13%',
     borderRadius: 10,
     marginTop: 20,
-    marginBottom: 30
+    marginBottom: 20
   },
   optionItemsContainer: {
     display: 'flex',
